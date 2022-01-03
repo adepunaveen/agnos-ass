@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "3018e200-1886-4924-9996-61d7ba7d4042",
+		"name": "Agnos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"name\":\"sandwiches\",\r\n    \"price\":20,\r\n    \"size\":\"medium\",\r\n    \"quantity\":10\r\n    },\r\n    {\r\n    \"name\": \"Cappuccino\",\r\n    \"price\": 20,\r\n    \"size\": \"medium\",\r\n    \"quantity\":10\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/grocery/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grocery",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Items List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"naveen\",\r\n    \"endpoint\":\"https://fcm.googleapis.com/fcm/send/cS5fYdFvuNg:APA91bHdrRyYc4KafWn09WWDgIeApLekISOz6QPpq4T0mPtpfvZtnwqcjHCkAoh6h0CgA4IQr6CIGHsBPT3moIs5MF38e9ctK-FdQBi9olmdeKCS2Uke4rCsoXMB0yhNa3l4ktGpKgq0\",\r\n    \"keys\":{\"auth\":\"-MYuxGA7GMZfJBvye1th3Q\",\r\n    \"p256dh\":\"BD5RdQc1yUvcSfF9QV_o4pBmHQpaUv-NyAAQD7cSeF6t_4XDjQ99EFep1b87IwLUSdQAT8MvvjzZZNMtaRSLVx0\"}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/grocery/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"grocery",
+						"items"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "name":"sandwiches",
+        "price":20,
+        "size":"medium"
+    },
+    {
+        "name": "Cappuccino",
+        "price": 10,
+        "size": "small"
+    },
+    {
+        "name": "Cappuccino",
+        "price": 20,
+        "size": "medium"
+    },
+    {
+        "name": "Latte",
+        "price": 25,
+        "size": "medium"
+    },
+    {
+        "name": "Green Tea",
+        "price": 25,
+        "size": "medium"
+    }
+]
